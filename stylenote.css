@@ -1,0 +1,17 @@
+.menu1h {
+  color: #3c1218;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+.menunote {
+  background-color: #fcdfdb;
+  border: #fcdfdb;
+  border: 1px solid;
+  justify-content: center;
+  width: 75%;
+}
+
+/*# sourceMappingURL=stylenote.css.map */

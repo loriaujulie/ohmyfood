@@ -1,0 +1,77 @@
+html
+{
+	box-shadow: 1px 1px 10px #555;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+}
+body{
+    margin: 0 0 0 0;
+}
+header, footer, #prochainement{
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    font-family: 'montserrat', 'arial', 'sans-serif';
+    background-color: rgba(6,134,92);
+    color: yellow;
+    display: flex;
+}
+header{
+    justify-content: center;
+}    
+#prochainement{
+    border-radius: 30px;
+    width: 50%;
+    align-items: center;
+}
+footer{        
+    position: fixed;
+    justify-content: space-between;
+    bottom: 0px;
+    width: 90%;
+    padding: 25px 25px 25px 25px;
+    margin-right: 35px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid;
+    box-sizing: border-box;
+    width: 40%;
+}
+.note{
+    color: rgba(60,18,24);
+    background-color: rgba(252,223,219);
+    border: rgba(252,223,219);
+}
+
+.chic{
+    @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+    font-family: 'croissant+one', 'arial', 'sans-serif';
+    color: rgba(60,18,24);
+    background-color: rgba(255,245,254);
+    border:rgba(255,245,254);
+}
+.delice{
+    color: rgba(8,135,251);
+    background-color: rgba(249,249,249);
+    border:rgba(249,249,249);
+}
+.palette{
+    color: rgba(114,191,86);
+    background-color: rgba(253,255,253);
+    border:rgba(253,255,253);   
+}
+.prix{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.text{
+    color:black;
+}
+h1
+{
+    font-weight: bold;
+    font-size: 2.5em;
+}

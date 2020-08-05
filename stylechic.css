@@ -1,0 +1,26 @@
+.textchic .menuchictitle {
+  @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+  font-family: "croissantone", "arial", "sans-serif";
+}
+
+.menuchic {
+  background-color: #fff5fe;
+}
+
+.menuchictitle > h2 {
+  color: linear-gradient(#c67412, #a56799, #6e4ccc);
+}
+
+.police1 {
+  color: #c67412;
+}
+
+.police2 {
+  color: #a56799;
+}
+
+.police3 {
+  color: #6e4ccc;
+}
+
+/*# sourceMappingURL=stylechic.css.map */
