@@ -1,17 +1,15 @@
 html
 {
-	box-shadow: 1px 1px 10px #555;
-    margin: auto;
-    max-width: 1200px;
+	margin: auto;
+    max-width: 1100px;
     width: 100%;
     height: auto;
 }
 body{
     margin: 0 0 0 0;
 }
-header, footer, #prochainement{
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    font-family: 'montserrat', 'arial', 'sans-serif';
+header, footer, h6{
+    font-family: 'Montserrat', sans-serif;
     background-color: rgba(6,134,92);
     color: yellow;
     display: flex;
@@ -19,59 +17,150 @@ header, footer, #prochainement{
 header{
     justify-content: center;
 }    
-#prochainement{
-    border-radius: 30px;
-    width: 50%;
-    align-items: center;
+main{
+    margin: 15px 50px 55px 50px;
+    padding: 0 35px 35px 35px;
 }
 footer{        
     position: fixed;
-    justify-content: space-between;
     bottom: 0px;
-    width: 90%;
+    justify-content: space-between;
+    /*width: 75%;
     padding: 25px 25px 25px 25px;
-    margin-right: 35px;
+    margin: 35px 50px 0 50px;*/
 }
 section{
     display: flex;
+    justify-content: space-around;
+    align-items: justify;
     flex-direction: column;
-    flex-wrap: wrap;
-    border: 1px solid;
+    flex-wrap: nowrap;
+    margin: 10px 35px 10px 35px;
+}
+.ligne1, .ligne2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.note, .chic, .delice, .palette{
     box-sizing: border-box;
-    width: 40%;
+    width: 35%;
+    height: 400px;
+    text-align: center;
+}
+.note a, .chic a, .delice a, .palette a{
+    text-decoration: none;
+}
+.note a{
+    color: rgba(60,18,24);
+}
+.chic h5 a{
+    background: -webkit-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.chic h4 a{
+    color: rgba(199,116,18);
+}
+.delice a{
+    color: rgba(8,135,251);
+}
+.palette a{
+    color: rgba(114,191,86);
+}
+.palette h5, .note h5, .chic h5, .delice h5{  
+    font-size: 1.5em;
+}
+.palette h4, .note h4, .chic h4, .delice h4{  
+    font-size: 1.7em;
 }
 .note{
     color: rgba(60,18,24);
     background-color: rgba(252,223,219);
     border: rgba(252,223,219);
 }
-
+.note h5{
+    font-family: 'Devonshire', cursive;
+}
+.note h4{
+    font-family: 'Sriracha', cursive
+}
 .chic{
-    @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-    font-family: 'croissant+one', 'arial', 'sans-serif';
-    color: rgba(60,18,24);
     background-color: rgba(255,245,254);
     border:rgba(255,245,254);
+}
+.chic h5{
+    font-family: 'Croissant One', cursive;
+    background: -webkit-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.chic h4{
+    color: rgba(199,116,18);
+    font-family: 'Noto Serif', serif;
 }
 .delice{
     color: rgba(8,135,251);
     background-color: rgba(249,249,249);
     border:rgba(249,249,249);
 }
+.delice h5{
+    font-family: 'Dancing Script', cursive;
+}
+.delice h4{
+    font-family: 'Kalam', cursive;
+}
 .palette{
     color: rgba(114,191,86);
     background-color: rgba(253,255,253);
-    border:rgba(253,255,253);   
+    border:rgba(253,255,253);
 }
-.prix{
-    display: flex;
-    flex-wrap: nowrap;
+.palette h5{
+    font-family: 'Kaushan Script', cursive;
 }
-.text{
-    color:black;
+.palette h4{
+        font-family: 'Kalam', cursive; 
+}
+h1, h2, h4, h5{
+    justify-content: center;    
 }
 h1
 {
     font-weight: bold;
     font-size: 2.5em;
+}
+h2
+{
+    display: flex;
+}
+h4
+{
+    display:flex;
+}
+h5
+{
+    display:flex;
+}
+
+.ligne3
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ligne3>h3{
+    justify-content: center;
+    font-size: 1.8em;
+    font-weight: lighter;
+    color: yellow;
+    border-radius: 10px;
+    background-clip: border-box;
+    background-color: rgba(6,134,92);
+    padding: 10px 30px 10px 30px;
+}
+.menunote, .menuchic, .menudelice, .menupalette{
+    justify-content: center;
+    width: 90%;
+    padding: 20px 20px 20px 20px;
 }

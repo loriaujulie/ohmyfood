@@ -1,20 +1,53 @@
-.textchic .menuchictitle{
-    @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-    font-family: 'croissantone', 'arial', 'sans-serif';
-}
 .menuchic
 {
     background-color: rgba(255,245,254);
 }
-.menuchictitle>h2{
-    color: linear-gradient(rgba(198,116,18),rgba(165,103,153),rgba(110,76,204));
+h5{
+    font-family: 'Croissant One', cursive;
+    background: -webkit-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
+    background: -moz-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2.2em;
+}
+h3::before, h3::after{
+    content: "";
+    background:rgba(2,40,221);
+    width: 200px;
+    height: 15px;
+    clip-path: polygon(25% 75%, 54% 75%, 100% 74%, 100% 80%, 40% 80%, 40% 81%, 0 69%);
+}        
+.menu2s 
+{
+    font-family: 'Sriracha', cursive;
 }
 .police1{
     color: rgba(198,116,18);
+    padding: 0 0 0 0;
 }
 .police2{
     color: rgba(165,103,153);
+    padding: 0 0 0 0;
 }
 .police3{
     color: rgba(110,76,204);
+    padding: 0 0 0 0;
 }
+.prix{
+    text-align: right;
+}
+.plat{
+    text-align: left; 
+} 
+/*rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204)*/
+
+
+/*sur le style.scss .chic
+.chic{
+    font-size: 1.1em;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+}*/

@@ -1,16 +1,30 @@
-.menu1h
-{
-    color: rgba(60,18,24);
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    width: 75%;
-}
 .menunote
 {
     background-color: rgba(252,223,219);
-    border: rgba(252,223,219);
-    border:1px solid;
-    justify-content: center;
-    width: 75%;
+    color: rgba(60,18,24);
+    }
+.menu1h
+{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.menu1s
+{
+    font-family: 'Sriracha', cursive;
+}
+.menu1h h5{
+    font-family: 'Devonshire', cursive;
+    font-size: 2.2em;
+    margin: 5px 0 0 0;
+}
+.menu1s h5{
+    font-family: 'Devonshire', cursive;
+    font-size: 1.5em;
+}
+i{
+    padding: 0 5px 0 5px;
+    background: -webkit-linear-gradient(left, rgba(241,92,97) ,rgba(246,145,106));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

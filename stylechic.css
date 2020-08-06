@@ -1,26 +1,59 @@
-.textchic .menuchictitle {
-  @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
-  font-family: "croissantone", "arial", "sans-serif";
-}
-
 .menuchic {
   background-color: #fff5fe;
 }
 
-.menuchictitle > h2 {
-  color: linear-gradient(#c67412, #a56799, #6e4ccc);
+h5 {
+  font-family: "Croissant One", cursive;
+  background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
+  background: -moz-linear-gradient(left, #c67412, #a56799, #6e4ccc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.2em;
+}
+
+h3::before, h3::after {
+  content: "";
+  border: 4px solid #0228dd;
+  background: #0228dd;
+  clip-path: polygon(30% 40%, 100% 50%, 30% 60%, 0% 50%);
+}
+
+.menu2s {
+  font-family: "Sriracha", cursive;
 }
 
 .police1 {
   color: #c67412;
+  padding: 0 0 0 0;
 }
 
 .police2 {
   color: #a56799;
+  padding: 0 0 0 0;
 }
 
 .police3 {
   color: #6e4ccc;
+  padding: 0 0 0 0;
 }
+
+.prix {
+  text-align: right;
+}
+
+.plat {
+  text-align: left;
+}
+
+/*rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204)*/
+/*sur le style.scss .chic
+.chic{
+    font-size: 1.1em;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+}*/
 
 /*# sourceMappingURL=stylechic.css.map */

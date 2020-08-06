@@ -1,5 +1,18 @@
 .menupalette {
-  background-color: yellow;
+  background-color: rgba(253,255,253);
 }
-
+.menu4h{
+  background: -webkit-linear-gradient(left, rgba(65,150,60) ,rgba(184,250,124));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu4h h5{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.2em;
+  margin: 5px 0 0 0;
+}
+.menu4s{
+  font-family: 'Kalam', cursive;
+  margin: 5px 0 0 0;
+}
 /*# sourceMappingURL=stylepalette.scss.map */
