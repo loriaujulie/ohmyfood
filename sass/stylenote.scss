@@ -8,6 +8,8 @@
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .menu1s
 {
@@ -20,10 +22,10 @@
 }
 .menu1s h5{
     font-family: 'Devonshire', cursive;
-    font-size: 1.5em;
+    font-size: 1.5em;    
 }
 i{
-    padding: 0 5px 0 5px;
+    padding: 15px 5px 0 5px;
     background: -webkit-linear-gradient(left, rgba(241,92,97) ,rgba(246,145,106));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

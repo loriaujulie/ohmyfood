@@ -1,10 +1,3 @@
-html {
-  margin: auto;
-  max-width: 1100px;
-  width: 100%;
-  height: auto;
-}
-
 body {
   margin: 0 0 0 0;
 }
@@ -21,7 +14,8 @@ header {
 }
 
 main {
-  margin: 15px 50px 55px 50px;
+  box-sizing: 100%;
+  margin: 15px 50px 50px 50px;
   padding: 0 35px 35px 35px;
 }
 
@@ -29,45 +23,75 @@ footer {
   position: fixed;
   bottom: 0px;
   justify-content: space-between;
-  /*width: 75%;
-  padding: 25px 25px 25px 25px;
-  margin: 35px 50px 0 50px;*/
+  width: 100%;
 }
 
-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: justify;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin: 10px 35px 10px 35px;
+footer a {
+  padding: 25px 30px 25px 30px;
+  font-size: 1.6em;
 }
 
-.ligne1, .ligne2 {
+h1 a, footer a {
+  color: yellow;
+}
+
+.ligne {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 15px 50px 0 50px;
 }
 
 .note, .chic, .delice, .palette {
   box-sizing: border-box;
-  width: 35%;
-  height: 400px;
+  width: 400px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.note, .delice {
+  margin: 0 15px 0 0;
+}
+
+.chic, .palette {
+  margin: 0 0 0 15px;
+}
+
+.note a, .chic a, .delice a, .palette a, h1 a, footer a {
+  text-decoration: none;
+}
+
+.zoom, h1 a, h1, h2, h4, h5, .ligne3 {
   text-align: center;
 }
 
-.note a, .chic a, .delice a, .palette a {
-  text-decoration: none;
+.zoom:hover {
+  zoom: 135%;
 }
 
 .note a {
   color: #3c1218;
 }
 
+.note i {
+  padding: 0 5px 0 5px;
+  background: -webkit-linear-gradient(left, #f15c61, #f6916a);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .chic h5 a {
   background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .chic h4 a {
@@ -78,22 +102,40 @@ section {
   color: #0887fb;
 }
 
+.delice h5 {
+  background: -webkit-linear-gradient(left, #023be3, #0889fb);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .palette a {
   color: #72bf56;
 }
 
+.palette h5 {
+  background: -webkit-linear-gradient(left, #41963c, #b8fa7c);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .palette h5, .note h5, .chic h5, .delice h5 {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .palette h4, .note h4, .chic h4, .delice h4 {
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
 .note {
   color: #3c1218;
   background-color: #fcdfdb;
-  border: #fcdfdb;
+}
+.note:hover {
+  background: rgba(252, 223, 219, 0.5);
 }
 
 .note h5 {
@@ -106,14 +148,18 @@ section {
 
 .chic {
   background-color: #fff5fe;
-  border: #fff5fe;
+}
+.chic:hover {
+  background: rgba(255, 245, 254, 0.5);
 }
 
 .chic h5 {
   font-family: "Croissant One", cursive;
   background: -webkit-linear-gradient(left, #c67412, #a56799, #6e4ccc);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .chic h4 {
@@ -124,7 +170,9 @@ section {
 .delice {
   color: #0887fb;
   background-color: #f9f9f9;
-  border: #f9f9f9;
+}
+.delice:hover {
+  background: rgba(249, 249, 249, 0.5);
 }
 
 .delice h5 {
@@ -138,7 +186,9 @@ section {
 .palette {
   color: #72bf56;
   background-color: #fdfffd;
-  border: #fdfffd;
+}
+.palette:hover {
+  background: rgba(253, 255, 253, 0.5);
 }
 
 .palette h5 {
@@ -149,49 +199,66 @@ section {
   font-family: "Kalam", cursive;
 }
 
-h1, h2, h4, h5 {
+h1, h2, h4, h5, .ligne3 {
   justify-content: center;
+  display: flex;
 }
 
-h1 {
+h1 a {
   font-weight: bold;
-  font-size: 2.5em;
-}
-
-h2 {
-  display: flex;
-}
-
-h4 {
-  display: flex;
-}
-
-h5 {
-  display: flex;
+  font-size: 2.2em;
 }
 
 .ligne3 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-sizing: content-box;
+  width: 30%;
+  margin: auto;
+  justify-content: center;
 }
 
 .ligne3 > h3 {
-  justify-content: center;
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: lighter;
   color: yellow;
   border-radius: 10px;
-  background-clip: border-box;
   background-color: #06865c;
   padding: 10px 30px 10px 30px;
 }
 
-.menunote, .menuchic, .menudelice, .menupalette {
+.menu1s, .menuchic, .menudelice, .menupalette {
   justify-content: center;
   width: 90%;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 30px 20px 30px;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.3em;
+}
+
+.prix {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .ligne {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .note, .chic, .delice, .palette {
+    margin: 15px 15px 0 15px;
+  }
+
+  .ligne {
+    margin: 0 0 0 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

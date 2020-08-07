@@ -17,8 +17,27 @@
 .menu4s {
   font-family: "Kalam", cursive;
   margin: 5px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+/*
+p 
+{
+	display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.prix
+{
+	display: flex;		
+	flex-direction: column;
+  width: 20%;
+  align-items: flex-end;
+}*/
 /*# sourceMappingURL=stylepalette.scss.map */
 
 /*# sourceMappingURL=stylepalette.css.map */

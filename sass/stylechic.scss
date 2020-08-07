@@ -12,12 +12,16 @@ h5{
     -moz-text-fill-color: transparent;
     font-size: 2.2em;
 }
-h3::before, h3::after{
-    content: "";
+h3::before{
+    width: 80px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50% / 60% 60% 40% 40%;
+    /*content: "";
     background:rgba(2,40,221);
-    width: 200px;
-    height: 15px;
-    clip-path: polygon(25% 75%, 54% 75%, 100% 74%, 100% 80%, 40% 80%, 40% 81%, 0 69%);
+    width: 500px;
+    height: 500px;
+    clip-path: polygon(81% 98%, 100% 97%, 100% 100%, 51% 100%, 0 100%, 0 97%, 18% 99%);*/
 }        
 .menu2s 
 {
@@ -35,12 +39,6 @@ h3::before, h3::after{
     color: rgba(110,76,204);
     padding: 0 0 0 0;
 }
-.prix{
-    text-align: right;
-}
-.plat{
-    text-align: left; 
-} 
 /*rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204)*/
 
 

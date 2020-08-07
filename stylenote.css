@@ -7,6 +7,8 @@
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .menu1s {
@@ -25,7 +27,7 @@
 }
 
 i {
-  padding: 0 5px 0 5px;
+  padding: 15px 5px 0 5px;
   background: -webkit-linear-gradient(left, #f15c61, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
