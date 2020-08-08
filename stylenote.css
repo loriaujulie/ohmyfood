@@ -11,26 +11,26 @@
   flex-direction: column;
 }
 
+.menu1s h5 {
+  font-size: 1.5em;
+}
+
 .menu1s {
   font-family: "Sriracha", cursive;
 }
 
-.menu1h h5 {
+.menu1h h5, .menu1s h5 {
   font-family: "Devonshire", cursive;
-  font-size: 2.2em;
-  margin: 5px 0 0 0;
-}
-
-.menu1s h5 {
-  font-family: "Devonshire", cursive;
-  font-size: 1.5em;
 }
 
 i {
-  padding: 15px 5px 0 5px;
   background: -webkit-linear-gradient(left, #f15c61, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.menu1h i {
+  padding: 15px 5px 0 5px;
 }
 
 .plat i {

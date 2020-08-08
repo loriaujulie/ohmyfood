@@ -5,39 +5,19 @@
 .menu4h {
   background: -webkit-linear-gradient(left, #41963c, #b8fa7c);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .menu4h h5 {
   font-family: "Kaushan Script", cursive;
-  font-size: 2.2em;
-  margin: 5px 0 0 0;
 }
 
 .menu4s {
   font-family: "Kalam", cursive;
-  margin: 5px 0 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
-/*
-p 
-{
-	display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.prix
-{
-	display: flex;		
-	flex-direction: column;
-  width: 20%;
-  align-items: flex-end;
-}*/
 /*# sourceMappingURL=stylepalette.scss.map */
 
 /*# sourceMappingURL=stylepalette.css.map */

@@ -2,17 +2,17 @@
   background-color: #f9f9f9;
 }
 .menu3h h5{
+  background: -webkit-linear-gradient(left, rgba(0,35,219) ,rgba(8,126,248));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.menu3h h5{
   font-family: 'Dancing Script', cursive;
-  font-size: 2.2em;
-  margin: 5px 0 0 0;
 }
 .menu3s{
   font-family: 'Kalam', cursive;
-  margin: 5px 0 0 0;
-  flex-direction: row;
 }
-.prix{
-  display: flex;
-  justify-content: flex-start;
-}
+
 /*# sourceMappingURL=styledelice.scss.map */

@@ -105,7 +105,7 @@ h1 a, footer a {
 }
 
 .delice h5 {
-  background: -webkit-linear-gradient(left, #023be3, #0889fb);
+  background: -webkit-linear-gradient(left, #0023db, #087ef8);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -233,19 +233,24 @@ h1 a {
   padding: 20px 30px 20px 30px;
 }
 
-.menu1s p, .menupalette p, .menudelice p, .menuchic p {
+.menu1h h5, .menu2h h5, .menu3h h5, .menu4h h5 {
+  font-size: 2.2em;
+  margin: 5px 0 0 0;
+}
+
+.menu1s, .menu2s, .menu3s, .menu4s {
+  margin: 5px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+p {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-}
-
-.menu1s p, .menupalette p, .menudelice p {
   font-size: 1.3em;
-}
-
-.menuchic p {
-  font-size: 1.5em;
 }
 
 .prix {
@@ -292,7 +297,7 @@ h1 a {
     width: auto;
   }
 
-  .menu1s p, .menudelice p, .menupalette p {
+  p {
     font-size: 1.1em;
   }
 
