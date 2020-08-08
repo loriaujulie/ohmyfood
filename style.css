@@ -304,6 +304,10 @@ p {
   h1 a {
     font-size: 1.8em;
   }
+
+  footer a {
+    font-size: 1.2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
