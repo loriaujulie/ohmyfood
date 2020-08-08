@@ -13,18 +13,17 @@ h5 {
   font-size: 2.2em;
 }
 
-h3::before {
-  width: 80px;
-  height: 100px;
-  background-color: #000;
-  border-radius: 50%/60% 60% 40% 40%;
-  /*content: "";
-  background:rgba(2,40,221);
-  width: 500px;
-  height: 500px;
-  clip-path: polygon(81% 98%, 100% 97%, 100% 100%, 51% 100%, 0 100%, 0 97%, 18% 99%);*/
-}
-
+/*h3::before{
+    width: 80px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50% / 60% 60% 40% 40%;
+    content: "";
+    background:rgba(2,40,221);
+    width: 500px;
+    height: 500px;
+    clip-path: polygon(81% 98%, 100% 97%, 100% 100%, 51% 100%, 0 100%, 0 97%, 18% 99%);
+}*/
 .menu2s {
   font-family: "Sriracha", cursive;
 }
@@ -45,12 +44,10 @@ h3::before {
 }
 
 /*rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204)*/
-/*sur le style.scss .chic
-.chic{
-    font-size: 1.1em;
-    font-weight: bold;
-    display:flex;
-    justify-content: center;
+/*@media (max-width: 768px) {
+    .menuchic p{
+      font-size: 5em;
+    }
 }*/
 
 /*# sourceMappingURL=stylechic.css.map */
