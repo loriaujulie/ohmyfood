@@ -1,7 +1,10 @@
+@import "variables.scss";
+@import "mixin.scss";
+
 .menunote
 {
-    background-color: rgba(252,223,219);
-    color: rgba(60,18,24);
+    background-color: $backnote;
+    color: $menunote;
     }
 .menu1h
 {
@@ -22,13 +25,27 @@
     font-family: 'Devonshire', cursive;
 }
 i{
-    background: -webkit-linear-gradient(left, rgba(241,92,97) ,rgba(246,145,106));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, rgba(241,92,97) ,rgba(246,145,106));
+    @include degrade
 }
 .menu1h i{
     padding: 15px 5px 0 5px;
 }
 .plat i{
     padding: 0 5px 0 5px;
+}
+.img1, .img2{
+    clip-path: ellipse(49% 12% at 50% 50%);
+}
+.img1, .img2{
+    background-color: $menunote;
+}
+.menu1s h3{
+    text-align: center;
+    background: linear-gradient(to top, $menunote 0%, $menunote 1px, transparent 3px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    &:hover{
+        background-size: 100% 100%;
+    }
 }

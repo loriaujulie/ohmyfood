@@ -1,12 +1,12 @@
+@import "variables.scss";
+@import "mixin.scss";
+
 .menudelice {
   background-color: #f9f9f9;
 }
 .menu3h h5{
-  background: -webkit-linear-gradient(left, rgba(0,35,219) ,rgba(8,126,248));
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  background: linear-gradient(to right, rgba(0,35,219),rgba(19,141,255));
+  @include degrade
 }
 .menu3h h5{
   font-family: 'Dancing Script', cursive;
@@ -14,5 +14,19 @@
 .menu3s{
   font-family: 'Kalam', cursive;
 }
-
+ .police1 .img1, .police2 .img1, .police3 .img1{
+  clip-path:polygon(93% 88%, 100% 74%, 96% 100%, 0 100%, 4% 88%);
+}
+.police1 .img2, .police2 .img2, .police3 .img2{
+  clip-path:polygon(93% 88%, 100% 74%, 96% 100%, 0 100%, 4% 88%);
+}
+.police1 .img1, .police1 .img2{
+  background-color: rgba(0,35,219);
+}
+.police2 .img1, .police2 .img2{
+  background-color: rgba(6,112,243);
+}
+.police3 .img1, .police3 .img2{
+  background-color: rgba(19,141,255);
+}
 /*# sourceMappingURL=styledelice.scss.map */

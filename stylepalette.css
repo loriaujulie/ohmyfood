@@ -3,11 +3,12 @@
 }
 
 .menu4h {
-  background: -webkit-linear-gradient(left, #41963c, #b8fa7c);
+  background: linear-gradient(to right, #41963c, #b8fa7c);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .menu4h h5 {
@@ -16,6 +17,16 @@
 
 .menu4s {
   font-family: "Kalam", cursive;
+}
+
+.img1 {
+  clip-path: polygon(62% 90%, 98% 81%, 100% 100%, 40% 100%, 8% 98%, 0 81%, 21% 85%);
+  background: linear-gradient(to right, #41963c, #b8fa7c);
+}
+
+.img2 {
+  clip-path: polygon(62% 90%, 98% 81%, 100% 100%, 40% 100%, 8% 98%, 0 81%, 21% 85%);
+  background: linear-gradient(to left, #41963c, #b8fa7c);
 }
 
 /*# sourceMappingURL=stylepalette.scss.map */

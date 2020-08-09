@@ -1,12 +1,12 @@
+@import "variables.scss";
+@import "mixin.scss";
+
 .menupalette{
-  background-color: rgba(253,255,253);
+  background-color: $backpalette;
 }
 .menu4h{
-  background: -webkit-linear-gradient(left, rgba(65,150,60) ,rgba(184,250,124));
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  background: linear-gradient(to right, rgba(65,150,60) ,rgba(184,250,124));
+  @include degrade
 }
 .menu4h h5{
   font-family: 'Kaushan Script', cursive;
@@ -15,4 +15,14 @@
   font-family: 'Kalam', cursive;
 }
 
+.img1{
+  clip-path: polygon(62% 90%, 98% 81%, 100% 100%, 40% 100%, 8% 98%, 0 81%, 21% 85%);
+  background: linear-gradient(to right, rgba(65,150,60) ,rgba(184,250,124));
+
+}
+.img2{
+  clip-path: polygon(62% 90%, 98% 81%, 100% 100%, 40% 100%, 8% 98%, 0 81%, 21% 85%);
+  background: linear-gradient(to left, rgba(65,150,60) ,rgba(184,250,124));
+  
+}
 /*# sourceMappingURL=stylepalette.scss.map */

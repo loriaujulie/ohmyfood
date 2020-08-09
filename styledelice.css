@@ -3,11 +3,12 @@
 }
 
 .menu3h h5 {
-  background: -webkit-linear-gradient(left, #0023db, #087ef8);
+  background: linear-gradient(to right, #0023db, #138dff);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .menu3h h5 {
@@ -16,6 +17,26 @@
 
 .menu3s {
   font-family: "Kalam", cursive;
+}
+
+.police1 .img1, .police2 .img1, .police3 .img1 {
+  clip-path: polygon(93% 88%, 100% 74%, 96% 100%, 0 100%, 4% 88%);
+}
+
+.police1 .img2, .police2 .img2, .police3 .img2 {
+  clip-path: polygon(93% 88%, 100% 74%, 96% 100%, 0 100%, 4% 88%);
+}
+
+.police1 .img1, .police1 .img2 {
+  background-color: #0023db;
+}
+
+.police2 .img1, .police2 .img2 {
+  background-color: #0670f3;
+}
+
+.police3 .img1, .police3 .img2 {
+  background-color: #138dff;
 }
 
 /*# sourceMappingURL=styledelice.scss.map */

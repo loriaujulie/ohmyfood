@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/stylepalette.scss"],"names":[],"mappings":"AAAA;EACE;;;AAEF;EACE;EACA;EACA;EACA;EACA;;;AAEF;EACE;;;AAEF;EACE;;;AAGF","file":"stylepalette.css"}
+{"version":3,"sourceRoot":"","sources":["sass/stylepalette.scss","sass/variables.scss","sass/mixin.scss"],"names":[],"mappings":"AAGA;EACE,kBCKW;;;ADHb;EACE;EENE;EACA;EACA;EACA;EACA;;;AFKJ;EACE;;;AAEF;EACE;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;;;AAGF","file":"stylepalette.css"}

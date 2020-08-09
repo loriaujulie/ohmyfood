@@ -1,0 +1,7 @@
+@mixin degrade{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

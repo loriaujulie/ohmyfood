@@ -1,22 +1,11 @@
-$back: rgba(6,134,92);
-$ohmyfood: yellow;
-$note: rgba(60,18,24);
-$degradenote: (left, rgba(241,92,97) ,rgba(246,145,106));
-$backnote: rgba(252,223,219);
-$degradechic: rgba(198,116,18),rgba(165,103,153),rgba(110,76,204);
-$menuchic: rgba(199,116,18);
-$backchic: rgba(255,245,254);
-$degradedelice: (left, rgba(2,59,227) ,rgba(8,137,251));
-$menudelice: rgba(8,137,251);
-$backdelice:#f9f9f9;
-$degradepalette: (left, rgba(65,150,60) ,rgba(184,250,124));
-$menupalette: rgba(114,191,86);
-$backpalette:rgba(253,255,253);
+@import "variables.scss";
+@import "mixin.scss";
+/*template*/
 body{
     margin: 0 0 0 0;
     width: 100%;
 }
-header, footer, h6{
+header, .wiggle, h6{
     font-family: 'Montserrat', sans-serif;
     background-color: $back;
     color: $ohmyfood;
@@ -31,7 +20,7 @@ main{
     margin: 15px 50px 50px 50px;
     padding: 0 35px 35px 35px;
 }
-footer{        
+.wiggle{        
     position: fixed;
     bottom: 0px;
     justify-content: space-between;
@@ -44,6 +33,13 @@ footer a{
 h1 a, footer a{
     color: $ohmyfood;
 }
+h1 a{
+    font-weight: bold;
+    font-size: 2.2em;
+    letter-spacing: -6px;
+}
+
+/*index*/
 .ligne{
     display: flex;
     flex-direction: row;
@@ -69,54 +65,34 @@ h1 a, footer a{
 .note a, .chic a, .delice a, .palette a, h1 a, footer a{
     text-decoration: none;
 }
-.zoom, h1 a, h1, h2, h4, h5, .ligne3{
+.zoom, .zoom i, h1 a, h1, h2, h4, h5, .ligne3{
     text-align: center;
 }
-.zoom{
-    &:hover{
-        zoom: 135%;
-    }
-}
 .note a{
-    color: $note;
+    color: $menunote;
 }
 .note i{
     padding: 0 5px 0 5px;
-    background: -webkit-linear-gradient(left, rgba(241,92,97) ,rgba(246,145,106));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    background: linear-gradient(to right, rgba(241,92,97) ,rgba(246,145,106));
+    @include degrade;
 }
 .chic h5 a{
-    background: -webkit-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-.chic h4 a{
-    color: rgba(199,116,18);
+    background: linear-gradient(to right, rgba(198,116,18) ,rgba(110,76,204));
+    @include degrade
 }
 .delice a{
-    color: rgba(8,135,251);
+    color: $menudelice;
 }
 .delice h5{
-    background: -webkit-linear-gradient(left, rgba(0,35,219) ,rgba(8,126,248));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    background: linear-gradient(to right, rgba(0,35,219) ,rgba(19,141,255));
+    @include degrade
 }
 .palette a{
     color: $menupalette;
 }
 .palette h5{
-    background: -webkit-linear-gradient(left, rgba(65,150,60) ,rgba(184,250,124));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    background: linear-gradient(to right, rgba(65,150,60) ,rgba(184,250,124));
+    @include degrade
   }
 .palette h5, .note h5, .chic h5, .delice h5{  
     font-size: 1.4em;
@@ -125,8 +101,8 @@ h1 a, footer a{
     font-size: 2em;
 }
 .note{
-    color: rgba(60,18,24);
-    background-color: rgba(252,223,219);
+    color: $menunote;
+    background-color: $backnote;
     &:hover{
         background: rgba($backnote, 0.5);
     }
@@ -143,20 +119,12 @@ h1 a, footer a{
         background: rgba($backchic, 0.5);
     }
 }
-.chic h5{
-    font-family: 'Croissant One', cursive;
-    background: -webkit-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
 .chic h4{
-    color: rgba(199,116,18);
+    color: $menuchic;
     font-family: 'Noto Serif', serif;
 }
 .delice{
-    color: rgba(8,135,251);
+    color: $menudelice;
     background-color: $backdelice;
     &:hover{
         background: rgba($backdelice, 0.5);
@@ -185,14 +153,10 @@ h1, h2, h4, h5, .ligne3{
     justify-content: center; 
     display: flex;   
 }
-h1 a{
-    font-weight: bold;
-    font-size: 2.2em;
-}
 .ligne3
 {
     box-sizing: content-box;
-    width: 30%; 
+    width: 35%; 
     margin: auto;
     justify-content: center;
 }
@@ -203,18 +167,28 @@ h1 a{
     border-radius: 10px;
     background-color: $back;
     padding: 10px 30px 10px 30px;
+    display: flex;
+    flex-wrap: nowrap;
 }
-.menu1s, .menuchic, .menudelice, .menupalette{
+
+/*DRY*/
+.chic h5, .menu2h h5{
+    font-family: 'Croissant One', cursive;
+    background: linear-gradient(to right, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
+    @include degrade
+}
+
+.menu1s, .menu2s, .menu3s, .menu4s{
     justify-content: center;
     width: 90%;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 15px 20px 30px;
 }
 .menu1h h5, .menu2h h5, .menu3h h5, .menu4h h5{
     font-size: 2.2em;
     margin: 5px 0 0 0;
 }
 .menu1s, .menu2s, .menu3s, .menu4s{
-    margin: 5px 0 0 0;
+    margin: 50px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -224,7 +198,8 @@ p{
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    font-size: 1.3em;    
+    font-size: 1.3em;  
+    margin: 15px 15px 15px 15px;  
 }
 .prix
 {
@@ -233,6 +208,27 @@ p{
     width: 20%;
     align-items: flex-end;
 }
+.deco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    margin: 10px 0 20px 0; 
+}
+.img1{
+    width: 35%;
+    height: 1em;
+    
+}
+.img2{
+    width: 35%;
+    height: 1em;
+}
+.menunote h3, .menuchic h3, .menupalette h3, .menudelice h3{
+    font-size: 1.2em;
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 0;
+}
+/*mentions légales*/
 .mention h3{
     text-align: justify;
 }
@@ -240,12 +236,99 @@ p{
     margin: 10px 5px 60px 5px;
 }
 
+/*effets graphiques complémentaires*/
+    /*footer*/
+.wiggle a{
+    animation: headshake 300ms cubic-bezier(.4,.1,.6,.9) infinite;
+}
+$shake-intensity: 3%;
+@keyframes headshake{
+    25% {
+        transform: translateY(-$shake-intensity);
+    }
+    75% {
+        transform: translateY($shake-intensity);
+    }
+}
+    /*points de suspension*/
+    /*Animation points de suspensions
+
+@keyframes points {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    10%, 30%, 50%, 70% {
+      transform: translateY(-8px);
+    }
+    20%, 40%, 60% {
+      transform: translateY(8px);
+    }
+    80% {
+      transform: translateY(6.4px);
+    }
+    90% {
+      transform: translateY(-6.4px);
+    }
+  }
+}*/
+.point{
+    animation: infinite;
+    display: flex;
+    flex-wrap: nowrap;
+}    
+#point1{
+    /*transition: transform 450ms;*/
+    animation-delay: 100ms;
+}
+#point2{
+    /*transition: transform 450ms;*/
+    animation-delay: 600ms;
+}
+#point3{
+    /*transition: transform 450ms;*/
+    animation-delay: 1100ms;
+}
+    /*zoom index:html au passage souris*/
+.zoom{
+    transform: scale(1);
+    transition: transform 300ms;
+    &:hover
+    {
+        transform: scale(1.1);
+        font-size: 1.2em;
+    }
+}
+/*titre soulignés menudelice et menupalette*/
+.menupalette h3, .menudelice h3{
+    text-align: center;
+    background: linear-gradient(to top, #000 0%, #000 1px, transparent 3px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    &:hover{
+        background-size: 100% 100%;
+    }
+}
+
+/*responsive*/
 @media (max-width: 768px){
+    /*template*/
+    main{
+        margin: 10px 5px 60px 5px;
+        padding: 10px 0 60px 0;
+    }
+    h1 a{
+        font-size: 1.8em;
+    }
+    footer a{        
+    font-size: 1.2em;
+    }
+    /*index*/
     .ligne{
         display: flex;
         flex-direction: column;
         margin: 0 0 0 0;
     }
+    /*DRY*/
     .note, .chic, .delice, .palette{
         margin: 15px 15px 0 15px;
         padding: 0 0 0 0;
@@ -254,24 +337,25 @@ p{
     }
     .palette a, .note a, .chic a, .delice a{  
         font-size: 1.2em;
-    }
-    main{
-        margin: 10px 5px 60px 5px;
-    }
+    }    
     .menu1s, .menuchic, .menudelice, .menupalette{
         justify-content: center;
-        margin: 10px 10px 80px 10px;
+        margin: 10px 10px 30px 10px;
         padding: 0 0 10px 0;
         width: auto;
-    }    
+    } 
+    .menu1s, .menuchic, .menudelice, .menupalette{
+        padding: 0 15px 0 0;
+    }   
     p{
         font-size: 1.1em;
     }
-    h1 a{
-        font-size: 1.8em;
+    .img1{
+        width: 20%;
+        height: 2em;
     }
-    footer a{        
-    font-size: 1.2em;
+    .img2{
+        width: 20%;
+        height: 2em;
     }
-
 }

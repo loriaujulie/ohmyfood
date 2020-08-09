@@ -1,42 +1,109 @@
+@import "variables.scss";
+@import "mixin.scss";
+
 .menuchic
 {
-    background-color: rgba(255,245,254);
-}
-.menu2h{
-    background: -webkit-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
-    background: -moz-linear-gradient(left, rgba(198,116,18) ,rgba(165,103,153), rgba(110,76,204));
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    background-color: $backchic;
 }
 .menu2h h5{  
-    font-family: 'Croissant One', cursive;  
-}
-/*h3::before{
-    width: 80px;
-    height: 100px;
-    background-color: #000;
-    border-radius: 50% / 60% 60% 40% 40%;
-    content: "";
-    background:rgba(2,40,221);
-    width: 500px;
-    height: 500px;
-    clip-path: polygon(81% 98%, 100% 97%, 100% 100%, 51% 100%, 0 100%, 0 97%, 18% 99%);
-}*/        
+    font-family: 'Croissant One', cursive;
+    background: linear-gradient(to right, rgba(198,116,18) ,rgba(110,76,204));
+    @include degrade  
+} 
 .menu2s 
 {
-    font-family: 'Sriracha', cursive;
+    font-family: 'Noto Serif', serif;
+}
+.police1, .police2, .police3{
+    margin: 10px 10px 10px 10px;
+}
+p{
+    padding: 10px 10px 10px 10px;
 }
 .police1{
-    color: rgba(198,116,18);
-    padding: 0 0 0 0;
+    color: rgba(199,116,18);
 }
 .police2{
     color: rgba(165,103,153);
-    padding: 0 0 0 0;
 }
 .police3{
     color: rgba(110,76,204);
-    padding: 0 0 0 0;
 }
+/*clip-path*/
+.police1 .img1, .police2 .img1, .police3 .img1{
+clip-path: polygon(75% 30%, 100% 50%, 75% 70%, 0 50%);
+}
+.police1 .img2, .police2 .img2, .police3 .img2{
+clip-path: polygon(25% 30%, 100% 50%, 25% 70%, 0 50%);
+}
+.police1 .img1, .police1 .img2{
+    background-color: rgba(199,116,18);
+}
+.police2 .img1, .police2 .img2{
+    background-color: rgba(165,103,153);
+}
+.police3 .img1, .police3 .img2{
+    background-color: rgba(110,76,204);
+}
+/*.police1 h3, .police2 h3, .police3 h3{
+    text-align: center;
+    background-size: 0 100%;
+    background: linear-gradient(to top, rgb(199,116,18) 0%, rgb(199,116,18) 1px, transparent 3px) no-repeat;
+    transition: background-size 1s;
+}
+.police1 h3, .police2 h3, .police3 h3{
+    &:hover{
+    background-size: 100% 100%;
+}
+}*/
+
+.police1 h3{
+        text-align: center;
+        background: linear-gradient(to top, rgba(199,116,18) 0%, rgba(199,116,18) 1px, transparent 3px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 1s;
+        &:hover{
+            background-size: 100% 100%;
+        }
+}
+    
+.police2 h3{
+    text-align: center;
+    background: linear-gradient(to top, rgba(165,103,153) 0%, rgba(165,103,153) 1px, transparent 3px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    &:hover{
+        background-size: 100% 100%;
+    }
+}
+.police3 h3{
+    text-align: center;
+    background: linear-gradient(to top, rgba(110,76,204) 0%, rgba(110,76,204) 1px, transparent 3px) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 1s;
+    &:hover{
+        background-size: 100% 100%;
+    }
+}/*
+.menunote .police1 h3{
+        text-align: center;
+        background: linear-gradient(to top, rgb(199,116,18) 0%, rgb(199,116,18) 1px, transparent 3px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 1s;
+    }
+.menunote h3:hover, .menuchic h3:hover, .menudelice h3:hover, .menupalette h3:hover{
+        background-size: 100% 100%;
+    }
+    , .menuchic h3, .menudelice h3, .menupalette h3
+    , .menuchic h3:hover, .menudelice h3:hover, .menupalette h3:hover
+
+    
+.police1 h3{
+    background: linear-gradient(to top, rgb(199,116,18) 0%, rgb(199,116,18) 1px, transparent 3px) no-repeat;
+}
+.police2 h3{
+    background: linear-gradient(to top, rgba(165,103,153) 0%, rgba(165,103,153) 1px, transparent 3px) no-repeat;
+}
+.police3 h3{
+    background: linear-gradient(to top, rgba(110,76,204) 0%, rgba(110,76,204) 1px, transparent 3px) no-repeat;
+}*/
