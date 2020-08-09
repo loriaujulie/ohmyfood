@@ -311,46 +311,54 @@ p {
     transform: translateY(3%);
   }
 }
-/*points de suspension*/
-/*Animation points de suspensions
-
+/*Animation points de suspensions*/
 @keyframes points {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    10%, 30%, 50%, 70% {
-      transform: translateY(-8px);
-    }
-    20%, 40%, 60% {
-      transform: translateY(8px);
-    }
-    80% {
-      transform: translateY(6.4px);
-    }
-    90% {
-      transform: translateY(-6.4px);
-    }
+  0% {
+    opacity: 0.1;
   }
-}*/
+  20% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
 .point {
-  animation: infinite;
   display: flex;
   flex-wrap: nowrap;
 }
 
+.point, #point1, #point2, #point3 {
+  padding-left: 5px;
+}
+
+#point1, #point2, #point3 {
+  font-weight: bold;
+  animation: points;
+  animation-iteration-count: infinite;
+  animation-duration: 1500ms;
+  transition: transform 500ms;
+}
+
 #point1 {
-  /*transition: transform 450ms;*/
-  animation-delay: 100ms;
+  animation-delay: 0ms;
 }
 
 #point2 {
-  /*transition: transform 450ms;*/
-  animation-delay: 600ms;
+  animation-delay: 500ms;
 }
 
 #point3 {
-  /*transition: transform 450ms;*/
-  animation-delay: 1100ms;
+  animation-delay: 1000ms;
 }
 
 /*zoom index:html au passage souris*/
