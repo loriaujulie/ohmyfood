@@ -1,13 +1,11 @@
 @import "variables.scss";
 @import "mixin.scss";
 
-.menunote
-{
+.menunote{
     background-color: $backnote;
     color: $menunote;
-    }
-.menu1h
-{
+}
+.menu1h{
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -15,25 +13,22 @@
     flex-direction: column;
 }
 .menu1s h5{
-    font-size: 1.5em;    
+    font-size: 2em; 
 }
-.menu1s
-{
+.menu1s{
     font-family: 'Sriracha', cursive;
 }
 .menu1h h5, .menu1s h5{
-    font-family: 'Devonshire', cursive;
+    font-family: 'Devonshire', cursive; 
 }
 i{
     background: linear-gradient(to right, rgba(241,92,97) ,rgba(246,145,106));
     @include degrade
 }
-.menu1h i{
-    padding: 15px 5px 0 5px;
+.plat h5 i{
+    padding-right: 15px; 
 }
-.plat i{
-    padding: 0 5px 0 5px;
-}
+/*décorations titres*/
 .img1, .img2{
     clip-path: ellipse(49% 12% at 50% 50%);
 }

@@ -1,8 +1,7 @@
 @import "variables.scss";
 @import "mixin.scss";
 
-.menuchic
-{
+.menuchic{
     background-color: $backchic;
 }
 .menu2h h5{  
@@ -10,15 +9,8 @@
     background: linear-gradient(to right, rgba(198,116,18) ,rgba(110,76,204));
     @include degrade  
 } 
-.menu2s 
-{
+.menu2s{
     font-family: 'Noto Serif', serif;
-}
-.police1, .police2, .police3{
-    margin: 10px 10px 10px 10px;
-}
-p{
-    padding: 10px 10px 10px 10px;
 }
 .police1{
     color: rgba(199,116,18);
@@ -29,7 +21,13 @@ p{
 .police3{
     color: rgba(110,76,204);
 }
-/*clip-path*/
+.police1, .police2, .police3{
+    margin: 10px 10px 10px 10px;
+}
+p{
+    padding: 10px 10px 10px 10px;
+}
+/*décorations titres*/
 .police1 .img1, .police2 .img1, .police3 .img1{
 clip-path: polygon(75% 30%, 100% 50%, 75% 70%, 0 50%);
 }
@@ -45,18 +43,7 @@ clip-path: polygon(25% 30%, 100% 50%, 25% 70%, 0 50%);
 .police3 .img1, .police3 .img2{
     background-color: rgba(110,76,204);
 }
-/*.police1 h3, .police2 h3, .police3 h3{
-    text-align: center;
-    background-size: 0 100%;
-    background: linear-gradient(to top, rgb(199,116,18) 0%, rgb(199,116,18) 1px, transparent 3px) no-repeat;
-    transition: background-size 1s;
-}
-.police1 h3, .police2 h3, .police3 h3{
-    &:hover{
-    background-size: 100% 100%;
-}
-}*/
-
+/*soulignement titres*/
 .police1 h3{
         text-align: center;
         background: linear-gradient(to top, rgba(199,116,18) 0%, rgba(199,116,18) 1px, transparent 3px) no-repeat;
@@ -65,8 +52,7 @@ clip-path: polygon(25% 30%, 100% 50%, 25% 70%, 0 50%);
         &:hover{
             background-size: 100% 100%;
         }
-}
-    
+}    
 .police2 h3{
     text-align: center;
     background: linear-gradient(to top, rgba(165,103,153) 0%, rgba(165,103,153) 1px, transparent 3px) no-repeat;
@@ -84,26 +70,4 @@ clip-path: polygon(25% 30%, 100% 50%, 25% 70%, 0 50%);
     &:hover{
         background-size: 100% 100%;
     }
-}/*
-.menunote .police1 h3{
-        text-align: center;
-        background: linear-gradient(to top, rgb(199,116,18) 0%, rgb(199,116,18) 1px, transparent 3px) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 1s;
-    }
-.menunote h3:hover, .menuchic h3:hover, .menudelice h3:hover, .menupalette h3:hover{
-        background-size: 100% 100%;
-    }
-    , .menuchic h3, .menudelice h3, .menupalette h3
-    , .menuchic h3:hover, .menudelice h3:hover, .menupalette h3:hover
-
-    
-.police1 h3{
-    background: linear-gradient(to top, rgb(199,116,18) 0%, rgb(199,116,18) 1px, transparent 3px) no-repeat;
 }
-.police2 h3{
-    background: linear-gradient(to top, rgba(165,103,153) 0%, rgba(165,103,153) 1px, transparent 3px) no-repeat;
-}
-.police3 h3{
-    background: linear-gradient(to top, rgba(110,76,204) 0%, rgba(110,76,204) 1px, transparent 3px) no-repeat;
-}*/

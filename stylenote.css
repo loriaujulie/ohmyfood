@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menunote {
   background-color: #fcdfdb;
   color: #3c1218;
@@ -12,7 +13,7 @@
 }
 
 .menu1s h5 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .menu1s {
@@ -32,14 +33,11 @@ i {
   color: transparent;
 }
 
-.menu1h i {
-  padding: 15px 5px 0 5px;
+.plat h5 i {
+  padding-right: 15px;
 }
 
-.plat i {
-  padding: 0 5px 0 5px;
-}
-
+/*décorations titres*/
 .img1, .img2 {
   clip-path: ellipse(49% 12% at 50% 50%);
 }

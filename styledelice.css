@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .menudelice {
   background-color: #f9f9f9;
 }
@@ -19,8 +20,9 @@
   font-family: "Kalam", cursive;
 }
 
+/*décorations titres*/
 .police1 .img1, .police2 .img1, .police3 .img1 {
-  clip-path: polygon(93% 88%, 100% 74%, 96% 100%, 0 100%, 4% 88%);
+  clip-path: polygon(7% 88%, 0% 74%, 4% 100%, 100% 100%, 96% 88%);
 }
 
 .police1 .img2, .police2 .img2, .police3 .img2 {

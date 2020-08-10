@@ -19,8 +19,7 @@ header {
 
 main {
   box-sizing: content-box;
-  margin: 15px 50px 50px 50px;
-  padding: 0 35px 35px 35px;
+  margin: 50px 50px 100px 50px;
 }
 
 .wiggle {
@@ -65,11 +64,11 @@ h1 a {
 }
 
 .note, .delice {
-  margin: 0 15px 0 0;
+  margin-right: 15px;
 }
 
 .chic, .palette {
-  margin: 0 0 0 15px;
+  margin-left: 15px;
 }
 
 .note a, .chic a, .delice a, .palette a, h1 a, footer a {
@@ -85,7 +84,6 @@ h1 a {
 }
 
 .note i {
-  padding: 0 5px 0 5px;
   background: linear-gradient(to right, #f15c61, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -202,6 +200,11 @@ h1, h2, h4, h5, .ligne3 {
   display: flex;
 }
 
+h2 {
+  font-family: "roboto", "arial";
+  font-size: 2.5em;
+}
+
 .ligne3 {
   box-sizing: content-box;
   width: 35%;
@@ -233,20 +236,21 @@ h1, h2, h4, h5, .ligne3 {
 
 .menu1s, .menu2s, .menu3s, .menu4s {
   justify-content: center;
-  width: 90%;
-  padding: 20px 15px 20px 30px;
-}
-
-.menu1h h5, .menu2h h5, .menu3h h5, .menu4h h5 {
-  font-size: 2.2em;
-  margin: 5px 0 0 0;
-}
-
-.menu1s, .menu2s, .menu3s, .menu4s {
-  margin: 50px 0 0 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0 0 0 0;
+  padding: 15px 0 0 0;
+}
+
+.menu1h, .menu2h, .menu3h, .menu4h {
+  font-size: 3em;
+  padding: 15px 5px 15px 5px;
+}
+
+.menu1h i {
+  font-size: 1.9em;
 }
 
 p {
@@ -255,7 +259,7 @@ p {
   width: 100%;
   justify-content: space-between;
   font-size: 1.3em;
-  margin: 15px 15px 15px 15px;
+  padding: 5px 0 5px 0;
 }
 
 .prix {
@@ -265,41 +269,53 @@ p {
   align-items: flex-end;
 }
 
+.plat {
+  padding: 0 25px 25px 25px;
+}
+
 .deco {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
+  width: 100%;
 }
 
-.img1 {
+.img1, .img2 {
   width: 35%;
   height: 1em;
+  margin-top: 10px;
 }
 
-.img2 {
-  width: 35%;
-  height: 1em;
+.menunote, .menuchic, .menupalette, .menudelice {
+  margin: 15px 80px 100px 80px;
 }
 
-.menunote h3, .menuchic h3, .menupalette h3, .menudelice h3 {
+.deco {
   font-size: 1.2em;
-  padding: 0 15px 0 15px;
-  margin: 0 0 0 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+h5 {
+  margin: 15px 0 15px 0;
+  font-size: 1.4em;
+  font-weight: lighter;
 }
 
 /*mentions légales*/
-.mention h3 {
-  text-align: justify;
-}
-
 .mention {
-  margin: 10px 5px 60px 5px;
+  margin: 10px 5px 100px 5px;
+  text-align: justify;
 }
 
 /*effets graphiques complémentaires*/
 /*footer*/
-.wiggle a {
+.wiggle a:hover {
   animation: headshake 300ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
 }
 
@@ -307,29 +323,35 @@ p {
   25% {
     transform: translateY(-3%);
   }
+  50% {
+    transform: translateX(3%);
+  }
   75% {
-    transform: translateY(3%);
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateX(3%);
   }
 }
 /*Animation points de suspensions*/
 @keyframes points {
   0% {
-    opacity: 0.1;
+    opacity: 0;
   }
-  20% {
+  /*20%{
+      opacity: 0.;
+  }*/
+  25% {
+    opacity: 0.2;
+  }
+  50% {
     opacity: 0.4;
   }
-  40% {
-    opacity: 0.7;
-  }
-  60% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.5;
+  75% {
+    opacity: 0.6;
   }
   100% {
-    opacity: 0.1;
+    opacity: 1;
   }
 }
 .point {
@@ -345,7 +367,7 @@ p {
   font-weight: bold;
   animation: points;
   animation-iteration-count: infinite;
-  animation-duration: 1500ms;
+  animation-duration: 900ms;
   transition: transform 500ms;
 }
 
@@ -354,11 +376,11 @@ p {
 }
 
 #point2 {
-  animation-delay: 500ms;
+  animation-delay: 300ms;
 }
 
 #point3 {
-  animation-delay: 1000ms;
+  animation-delay: 600ms;
 }
 
 /*zoom index:html au passage souris*/
@@ -373,7 +395,6 @@ p {
 
 /*titre soulignés menudelice et menupalette*/
 .menupalette h3, .menudelice h3 {
-  text-align: center;
   background: linear-gradient(to top, #000 0%, #000 1px, transparent 3px) no-repeat;
   background-size: 0 100%;
   transition: background-size 1s;
@@ -386,8 +407,7 @@ p {
 @media (max-width: 768px) {
   /*template*/
   main {
-    margin: 10px 5px 60px 5px;
-    padding: 10px 0 60px 0;
+    margin: 10px 0 80px 0;
   }
 
   h1 a {
@@ -406,38 +426,34 @@ p {
   }
 
   /*DRY*/
-  .note, .chic, .delice, .palette {
-    margin: 15px 15px 0 15px;
-    padding: 0 0 0 0;
-    box-sizing: border-box;
+  .note, .chic, .delice, .palette, .menunote, .menuchic, .menudelice, .menupalette {
     width: auto;
+    padding: 0;
   }
 
-  .palette a, .note a, .chic a, .delice a {
-    font-size: 1.2em;
-  }
-
-  .menu1s, .menuchic, .menudelice, .menupalette {
+  .menunote, .menuchic, .menudelice, .menupalette {
     justify-content: center;
     margin: 10px 10px 30px 10px;
-    padding: 0 0 10px 0;
-    width: auto;
   }
 
-  .menu1s, .menuchic, .menudelice, .menupalette {
-    padding: 0 15px 0 0;
+  .mention {
+    margin: 10px 10px 10px 10px;
   }
 
-  p {
+  .note, .chic, .delice, .palette {
+    margin: 15px 15px 0 15px;
+    box-sizing: border-box;
+  }
+
+  .note h5, .chic h5, .delice h5, .palette h5 {
+    font-size: 2em;
+  }
+
+  p, .menunote h5, .menuchic h5, .menudelice h5, .menupalette h5 {
     font-size: 1.1em;
   }
 
-  .img1 {
-    width: 20%;
-    height: 2em;
-  }
-
-  .img2 {
+  .img1, .img2 {
     width: 20%;
     height: 2em;
   }
