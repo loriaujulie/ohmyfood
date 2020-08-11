@@ -25,12 +25,9 @@
 }
 
 i {
-  background: linear-gradient(to right, #f15c61, #f6916a);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .plat h5 i {

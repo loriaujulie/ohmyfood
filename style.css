@@ -83,22 +83,16 @@ h1 a {
   color: #3c1218;
 }
 
-.note i {
-  background: linear-gradient(to right, #f15c61, #f6916a);
-  -webkit-background-clip: text;
+i {
+  background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .chic h5 a {
-  background: linear-gradient(to right, #c67412, #6e4ccc);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .delice a {
@@ -106,12 +100,9 @@ h1 a {
 }
 
 .delice h5 {
-  background: linear-gradient(to right, #0023db, #138dff);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #0023db 0%, #138dff 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .palette a {
@@ -119,12 +110,9 @@ h1 a {
 }
 
 .palette h5 {
-  background: linear-gradient(to right, #41963c, #b8fa7c);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #41963c 0%, #b8fa7c 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .palette h5, .note h5, .chic h5, .delice h5 {
@@ -226,12 +214,9 @@ h2 {
 /*DRY*/
 .chic h5, .menu2h h5 {
   font-family: "Croissant One", cursive;
-  background: linear-gradient(to right, #c67412, #a56799, #6e4ccc);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #c67412 0%, #a56799 50%, #6e4ccc 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .menu1s, .menu2s, .menu3s, .menu4s {
@@ -338,9 +323,6 @@ h5 {
   0% {
     opacity: 0;
   }
-  /*20%{
-      opacity: 0.;
-  }*/
   25% {
     opacity: 0.2;
   }
@@ -407,7 +389,7 @@ h5 {
 @media (max-width: 768px) {
   /*template*/
   main {
-    margin: 10px 0 80px 0;
+    margin: 10px 0 100px 0;
   }
 
   h1 a {
@@ -415,7 +397,7 @@ h5 {
   }
 
   footer a {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   /*index*/
@@ -426,6 +408,11 @@ h5 {
   }
 
   /*DRY*/
+  .menupalette .deco h3, .menudelice .deco h3 {
+    font-size: 1em;
+    padding-top: 20px;
+  }
+
   .note, .chic, .delice, .palette, .menunote, .menuchic, .menudelice, .menupalette {
     width: auto;
     padding: 0;
@@ -450,12 +437,13 @@ h5 {
   }
 
   p, .menunote h5, .menuchic h5, .menudelice h5, .menupalette h5 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .img1, .img2 {
     width: 20%;
     height: 2em;
+    margin-top: 0;
   }
 }
 

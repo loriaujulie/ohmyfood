@@ -1,14 +1,12 @@
+@charset "UTF-8";
 .menupalette {
   background-color: #fdfffd;
 }
 
 .menu4h {
-  background: linear-gradient(to right, #41963c, #b8fa7c);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #41963c 0%, #b8fa7c 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .menu4h h5 {
@@ -19,6 +17,7 @@
   font-family: "Kalam", cursive;
 }
 
+/*décorations titres*/
 .img1 {
   clip-path: polygon(62% 90%, 98% 81%, 100% 100%, 40% 100%, 8% 98%, 0 81%, 21% 85%);
   background: linear-gradient(to right, #41963c, #b8fa7c);

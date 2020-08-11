@@ -22,7 +22,7 @@
     font-family: 'Devonshire', cursive; 
 }
 i{
-    background: linear-gradient(to right, rgba(241,92,97) ,rgba(246,145,106));
+    background: linear-gradient(to right, rgba(241,92,97) 0%,rgba(246,145,106) 100%);
     @include degrade
 }
 .plat h5 i{

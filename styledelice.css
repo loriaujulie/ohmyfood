@@ -4,12 +4,9 @@
 }
 
 .menu3h h5 {
-  background: linear-gradient(to right, #0023db, #138dff);
-  -webkit-background-clip: text;
+  background: linear-gradient(to right, #0023db 0%, #138dff 100%);
   -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .menu3h h5 {
