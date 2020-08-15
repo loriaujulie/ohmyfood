@@ -71,7 +71,7 @@ h1 a {
   margin-left: 15px;
 }
 
-.note a, .chic a, .delice a, .palette a, h1 a, footer a {
+a {
   text-decoration: none;
 }
 
@@ -126,9 +126,9 @@ i {
 .note {
   color: #3c1218;
   background-color: #fcdfdb;
-}
-.note:hover {
-  background: rgba(252, 223, 219, 0.5);
+  /*&:hover{
+      background: rgba($backnote, 0.5);
+  }*/
 }
 
 .note h5 {
@@ -141,9 +141,9 @@ i {
 
 .chic {
   background-color: #fff5fe;
-}
-.chic:hover {
-  background: rgba(255, 245, 254, 0.5);
+  /*&:hover{
+      background: rgba($backchic, 0.5);
+  }*/
 }
 
 .chic h4 {
@@ -154,9 +154,9 @@ i {
 .delice {
   color: #0889fb;
   background-color: #f9f9f9;
-}
-.delice:hover {
-  background: rgba(249, 249, 249, 0.5);
+  /*&:hover{
+      background: rgba($backdelice, 0.5);
+  }*/
 }
 
 .delice h5 {
@@ -170,9 +170,9 @@ i {
 .palette {
   color: #72bf56;
   background-color: #fdfffd;
-}
-.palette:hover {
-  background: rgba(253, 255, 253, 0.5);
+  /*&:hover{
+      background: rgba($backpalette, 0.5);
+  }*/
 }
 
 .palette h5 {
@@ -318,6 +318,34 @@ h5 {
     transform: translateX(3%);
   }
 }
+/*fondu + zoom*/
+@keyframes fondu {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.zoom {
+  transform: scale(1);
+  transition: transform 1s, opacity 1s;
+}
+.zoom:hover {
+  animation: fondu;
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
 /*Animation points de suspensions*/
 @keyframes points {
   0% {
@@ -363,16 +391,6 @@ h5 {
 
 #point3 {
   animation-delay: 600ms;
-}
-
-/*zoom index:html au passage souris*/
-.zoom {
-  transform: scale(1);
-  transition: transform 300ms;
-}
-.zoom:hover {
-  transform: scale(1.1);
-  font-size: 1.2em;
 }
 
 /*titre soulignés menudelice et menupalette*/

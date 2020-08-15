@@ -61,7 +61,7 @@ h1 a{
 .chic, .palette{
     margin-left: 15px;
 }
-.note a, .chic a, .delice a, .palette a, h1 a, footer a{
+a{
     text-decoration: none;
 }
 .zoom, .zoom i, h1 a, h1, h2, h4, h5, .ligne3{
@@ -101,9 +101,9 @@ i{
 .note{
     color: $menunote;
     background-color: $backnote;
-    &:hover{
+    /*&:hover{
         background: rgba($backnote, 0.5);
-    }
+    }*/
 }
 .note h5{
     font-family: 'Devonshire', cursive;
@@ -113,9 +113,9 @@ i{
 }
 .chic{
     background-color: $backchic;
-    &:hover{
+    /*&:hover{
         background: rgba($backchic, 0.5);
-    }
+    }*/
 }
 .chic h4{
     color: $menuchic;
@@ -124,9 +124,9 @@ i{
 .delice{
     color: $menudelice;
     background-color: $backdelice;
-    &:hover{
+    /*&:hover{
         background: rgba($backdelice, 0.5);
-    }
+    }*/
 }
 .delice h5{
     font-family: 'Dancing Script', cursive;
@@ -137,9 +137,9 @@ i{
 .palette{
     color: $menupalette;
     background-color: $backpalette;
-    &:hover{
+    /*&:hover{
         background: rgba($backpalette, 0.5);
-    }
+    }*/
 }
 .palette h5{
     font-family: 'Kaushan Script', cursive;
@@ -266,6 +266,32 @@ $shake-intensity: 3%;
     }
 }
 
+/*fondu + zoom*/
+@keyframes fondu{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    75%{
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}.zoom{
+    transform: scale(1);
+    transition: transform 1s, opacity 1s;
+        &:hover {
+            animation: fondu;
+            transform: scale(1.2);
+            opacity: 0.6;
+    }
+}
 /*Animation points de suspensions*/
 @keyframes points{
     0%{
@@ -308,15 +334,7 @@ $shake-intensity: 3%;
     animation-delay: 600ms;
 }
 
-/*zoom index:html au passage souris*/
-.zoom{
-    transform: scale(1);
-    transition: transform 300ms;
-    &:hover{
-        transform: scale(1.1);
-        font-size: 1.2em;
-    }
-}
+
 /*titre soulignés menudelice et menupalette*/
 .menupalette h3, .menudelice h3{
     background: linear-gradient(to top, #000 0%, #000 1px, transparent 3px) no-repeat;
